@@ -3,7 +3,7 @@ from datetime import datetime
 from certificate_cheker_2_1.other.loger.logger_config import LoggerManager
 from certificate_cheker_2_1.other.methods.check_certificate_methods import CheckCertificateMethods
 from certificate_cheker_2_1.other.utils.urls import OtherNormalUrls
-from certificate_cheker_2_1.tginfo.dataTg import TelegramDataPROD
+from certificate_cheker_2_1.tg.tg_config import TelegramDataPROD
 
 logger = LoggerManager.get_logger(__name__)
 

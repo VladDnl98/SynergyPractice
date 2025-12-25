@@ -1,0 +1,3 @@
+import os
+
+CHECK_BEELINE_MVD_LOG_URL = os.getenv("CHECK_BEELINE_MVD_LOG_URL")

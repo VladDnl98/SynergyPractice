@@ -1,6 +1,7 @@
 import requests
 from certificate_cheker_2_1.other.loger.logger_config import LoggerManager
-from certificate_cheker_2_1.tginfo import dataTg
+from certificate_cheker_2_1.tg.tg_config import TelegramDataPROD
+
 logger = LoggerManager.get_logger(__name__)
 
 class TegApi:
@@ -19,7 +20,7 @@ class TegApi:
         :param text: Текст сообщения.
         :return: Ответ от API.
         """
-        token = dataTg.TelegramDataPROD.TOKEN
+        token = TelegramDataPROD.TOKEN
         endpoint = f"{self.url}{token}/sendMessage"
 
         r = requests.post(endpoint, data={
