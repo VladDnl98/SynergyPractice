@@ -1,14 +1,13 @@
-
 import re
 import datetime
 import requests
 import logging
 
-from state.state_manager import StateManager
-from tg.telegram_config import TelegramConfig
-from utils.message_formatter import format_base_message
-from utils.urls import CHECK_BEELINE_MVD_LOG_URL
-from tg.telegram_client import TelegramClient
+from bill_monitoring_2_5.tg.tg_client import TelegramClient
+from mvd_monitoring_2_3.state.state_manager import StateManager
+from mvd_monitoring_2_3.tg.telegram_config import TelegramConfig
+from mvd_monitoring_2_3.utils.message_formatter import format_base_message
+from mvd_monitoring_2_3.utils.urls import CHECK_BEELINE_MVD_LOG_URL
 
 logger = logging.getLogger(__name__)
 
@@ -212,5 +211,5 @@ class MvdMonitorService:
     def _send_to_all(self, message: str):
 
         self.tg_client.send_message(TelegramConfig.ODIN_YEY_CHAT_ID, TelegramConfig.THREAD_MVD_ID, message)
-        # self.tg_client.send_message(TelegramConfig.MVD_CHAT_ID, None, message)
-        # self.tg_client.send_message(TelegramConfig.OPPERACIONIST_PD_CHAT_ID, None, message)
+        self.tg_client.send_message(TelegramConfig.MVD_CHAT_ID, None, message)
+        self.tg_client.send_message(TelegramConfig.OPPERACIONIST_PD_CHAT_ID, None, message)

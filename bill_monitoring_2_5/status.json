@@ -1,0 +1,35 @@
+{
+  "https://bill.bezlimit.ru/trade/delayed-order/index": {
+    "success": true,
+    "slow": false,
+    "failed": false,
+    "response_time": 0.6997020244598389,
+    "status_code": 200,
+    "error": null
+  },
+  "https://bill.bezlimit.ru/phone/card/view/9587771444": {
+    "success": true,
+    "slow": false,
+    "failed": false,
+    "response_time": 0.40915799140930176,
+    "status_code": 200,
+    "error": null
+  },
+  "https://bill.bezlimit.ru/admin/user": {
+    "success": true,
+    "slow": false,
+    "failed": false,
+    "response_time": 1.4371137619018555,
+    "status_code": 200,
+    "error": null
+  },
+  "https://bill.bezlimit.ru/report/activations-summary": {
+    "success": true,
+    "slow": false,
+    "failed": false,
+    "response_time": 1.4247958660125732,
+    "status_code": 200,
+    "error": null
+  },
+  "last_ok_report": 1766704311.475038
+}
