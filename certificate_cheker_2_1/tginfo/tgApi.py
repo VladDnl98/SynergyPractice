@@ -1,6 +1,6 @@
 import requests
-from other.loger.logger_config import LoggerManager
-from tginfo import dataTg
+from certificate_cheker_2_1.other.loger.logger_config import LoggerManager
+from certificate_cheker_2_1.tginfo import dataTg
 logger = LoggerManager.get_logger(__name__)
 
 class TegApi:

@@ -1,6 +1,6 @@
 
-from other.loger.logger_config import LoggerManager
-from tginfo.tgApi import TegApi
+from certificate_cheker_2_1.other.loger.logger_config import LoggerManager
+from certificate_cheker_2_1.tginfo.tgApi import TegApi
 
 logger = LoggerManager.get_logger(__name__)
 

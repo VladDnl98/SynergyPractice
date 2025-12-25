@@ -3,8 +3,8 @@ import urllib3
 from dateutil import parser
 import certifi
 from datetime import datetime, timedelta
-from other.loger.logger_config import LoggerManager
-from other.methods.other_base_methods import OtherBaseMethods
+from certificate_cheker_2_1.other.loger.logger_config import LoggerManager
+from certificate_cheker_2_1.other.methods.other_base_methods import OtherBaseMethods
 
 logger = LoggerManager.get_logger(__name__)
 
